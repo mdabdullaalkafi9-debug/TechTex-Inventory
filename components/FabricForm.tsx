@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Fabric, FabricCategory } from '../lib/types';
+import { Fabric, FabricCategory } from '@/lib/types';
 
 interface FabricFormProps {
   onSubmit: (fabric: Omit<Fabric, 'id' | 'transactions' | 'availableStock'> & { id?: string }) => void;

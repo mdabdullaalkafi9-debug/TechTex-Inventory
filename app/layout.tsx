@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "TechTex Inventory Management",
   description: "An inventory management application for TechTex to track woven and non-woven fabric stock.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

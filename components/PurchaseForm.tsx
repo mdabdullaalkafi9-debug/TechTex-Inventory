@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PurchaseTransaction } from '../lib/types';
+import { PurchaseTransaction } from '@/lib/types';
 
 interface PurchaseFormProps {
   onSubmit: (data: Omit<PurchaseTransaction, 'id' | 'type'>) => void;
@@ -13,7 +13,6 @@ const PurchaseForm: React.FC<PurchaseFormProps> = ({ onSubmit, onClose, fabricCo
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // FIX: Check if quantity is not an empty string before comparing it as a number.
     if (quantity !== '' && quantity > 0) {
       onSubmit({
         quantity,

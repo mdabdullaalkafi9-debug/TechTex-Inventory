@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fabric, TransactionType, PurchaseTransaction, UsageTransaction, UsageStatus } from '../lib/types';
+import { Fabric, TransactionType, PurchaseTransaction, UsageTransaction, UsageStatus } from '@/lib/types';
 
 interface FabricDetailModalProps {
   fabric: Fabric;

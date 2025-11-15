@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
-import { Fabric, UsageStatus, UsageTransaction } from '../lib/types';
-import { ArrowUturnLeftIcon, TrashIcon } from './icons';
+import { Fabric, UsageStatus, UsageTransaction } from '@/lib/types';
+import { ArrowUturnLeftIcon, TrashIcon } from '@/components/icons';
 
 interface AdminPanelProps {
     fabrics: Fabric[];

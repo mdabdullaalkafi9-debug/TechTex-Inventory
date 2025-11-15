@@ -1,15 +1,15 @@
 "use client";
 
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
-import { Fabric, FabricCategory, PurchaseTransaction, UsageTransaction, Transaction, TransactionType, UsageStatus, Notification, NotificationType } from '../lib/types';
-import { PlusIcon, EditIcon, TrashIcon, SearchIcon, TechTexLogo, ShieldCheckIcon, BellIcon } from '../components/icons';
-import Modal from '../components/Modal';
-import FabricForm from '../components/FabricForm';
-import PurchaseForm from '../components/PurchaseForm';
-import UsageForm from '../components/UsageForm';
-import FabricDetailModal from '../components/FabricDetailModal';
-import AdminPanel, { AdminTab } from '../components/AdminPanel';
-import NotificationBell from '../components/NotificationBell';
+import { Fabric, FabricCategory, PurchaseTransaction, UsageTransaction, Transaction, TransactionType, UsageStatus, Notification, NotificationType } from '@/lib/types';
+import { PlusIcon, EditIcon, TrashIcon, SearchIcon, TechTexLogo, ShieldCheckIcon, BellIcon } from '@/components/icons';
+import Modal from '@/components/Modal';
+import FabricForm from '@/components/FabricForm';
+import PurchaseForm from '@/components/PurchaseForm';
+import UsageForm from '@/components/UsageForm';
+import FabricDetailModal from '@/components/FabricDetailModal';
+import AdminPanel, { AdminTab } from '@/components/AdminPanel';
+import NotificationBell from '@/components/NotificationBell';
 
 
 const initialFabrics: Fabric[] = [];
@@ -17,7 +17,7 @@ const LOW_STOCK_THRESHOLD = 20;
 const ADMIN_EMAIL = 'techtexbangladesh@gmail.com';
 
 
-const App: React.FC = () => {
+const HomePage: React.FC = () => {
     const [fabrics, setFabrics] = useState<Fabric[]>([]);
     const [isAdmin, setIsAdmin] = useState(false);
     const [activeCategory, setActiveCategory] = useState<FabricCategory>(FabricCategory.WOVEN);
@@ -518,4 +518,4 @@ const App: React.FC = () => {
     );
 };
 
-export default App;
+export default HomePage;

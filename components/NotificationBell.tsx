@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Notification, NotificationType } from '../lib/types';
-import { BellIcon } from './icons';
+import { Notification, NotificationType } from '@/lib/types';
+import { BellIcon } from '@/components/icons';
 
 interface NotificationBellProps {
     notifications: Notification[];

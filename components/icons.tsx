@@ -38,17 +38,23 @@ export const ArrowUturnLeftIcon = ({ className = 'w-5 h-5' }: { className?: stri
 
 
 export const TechTexLogo = ({ className = 'h-10' }: { className?: string }) => (
-    <svg className={className} viewBox="0 0 150 100" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-            <linearGradient id="logoGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                <stop offset="0%" style={{stopColor: '#1e3a8a', stopOpacity: 1}} />
-                <stop offset="100%" style={{stopColor: '#1e293b', stopOpacity: 1}} />
-            </linearGradient>
-        </defs>
-        <path d="M 75 10 L 100 10 L 100 35 L 85 35 L 85 60 L 95 60 L 75 80 L 55 60 L 65 60 L 65 35 L 50 35 L 50 10 Z" fill="url(#logoGradient)" stroke="#0f172a" strokeWidth="4" />
-        <path d="M 75 16 L 94 16 L 94 35 L 85 35 L 75 45 L 65 35 L 56 35 L 56 16 Z" fill="none" stroke="#60a5fa" strokeWidth="2.5" />
-        <path d="M 75 48 L 85 58 L 75 68 L 65 58 Z" fill="none" stroke="#60a5fa" strokeWidth="2" />
-        <text x="75" y="98" fontFamily="sans-serif" fontSize="14" fill="#1e293b" textAnchor="middle" fontWeight="bold">TECHTEX</text>
+    <svg className={className} viewBox="0 0 172 124" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+        <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M20.352,0 L151.648,0 L151.648,22.5 L106.648,22.5 L106.648,67.5 L86,90 L65.352,67.5 L65.352,22.5 L20.352,22.5 L20.352,0 Z M40.352,12 L131.648,12 L131.648,22.5 L96.148,22.5 L96.148,58 L86,70 L75.852,58 L75.852,22.5 L40.352,22.5 L40.352,12 Z"
+        />
+        <text
+            x="86"
+            y="118"
+            fontFamily="Arial, Helvetica, sans-serif"
+            fontSize="24"
+            fontWeight="bold"
+            textAnchor="middle"
+            className="fill-gray-800 dark:fill-white"
+        >
+            TECHTEX
+        </text>
     </svg>
 );
 

@@ -1,5 +1,6 @@
+
 import React, { useState } from 'react';
-import { TransactionType } from '../lib/types';
+import { TransactionType } from '../types';
 
 interface TransactionFormProps {
   onSubmit: (amount: number, notes?: string) => void;
