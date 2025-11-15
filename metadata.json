@@ -1,0 +1,5 @@
+{
+  "name": "TechTex Inventory Management",
+  "description": "An inventory management application for TechTex to track woven and non-woven fabric stock. Users can add fabric data and record purchases or usage, which automatically updates stock levels. An admin mode allows for editing and deleting records.",
+  "requestFramePermissions": []
+}
